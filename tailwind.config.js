@@ -1,5 +1,13 @@
-module.exports = {
+// As is with no custom configuration
+module.exports = require('@studiometa/tailwind-config');
+
+// By merging the package's configuration with you own custom one
+const config = require('@studiometa/tailwind-config');
+const merge = require('lodash.merge');
+
+module.exports = merge(config, {
   theme: {
+    debugOutline: true,
     filter: { // defaults to {}
       'none': 'none',
       'grayscale': 'grayscale(1)',
@@ -18,4 +26,4 @@ module.exports = {
   plugins: [
     require('tailwind-filter-utilities'),
   ],
-};
+});
