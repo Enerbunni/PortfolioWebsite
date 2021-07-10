@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="build/tailwind.css">
 </head>
 
-<body>
+<body class="debug-screens">
     <div class="h-full bg-black">
         <!--Parent Grid-->
-        <div class="grid md:grid-cols-2 p-4 md:p-12">
-            <div class="md:grid md:grid-cols-2">
-                <div class="flex flex-col items-center md:items-center md:col-start-2">
-                    <img src="/public/build/img/Evan.jpg" alt="Evan Haut" class="w-48 md:w-2/3 rounded-3xl">
+        <div class="grid lg:grid-cols-2 p-4 md:p-12">
+            <div class="lg:grid lg:grid-cols-2">
+                <div class="flex flex-col items-center lg:items-center lg:col-start-2">
+                    <img src="/public/build/img/Evan.jpg" alt="Evan Haut" class="w-48 lg:w-2/3 rounded-3xl">
                     <!--Socals for md+ -->
-                    <div class="hidden md:flex md:flex-shrink mt-6">
+                    <div class="hidden lg:flex lg:flex-shrink mt-6">
 
                         <div class=" rounded-3xl flex">
                             <a href="mailto:evanwhaut@gmail.com">
                                 <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="48" height="48"
-                                    class="fill-current text-white">
+                                    class="fill-current flex-shrink-0 text-white">
                                     <path
                                         d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z">
                                     </path>
@@ -63,7 +63,7 @@
 
 
             <!--Socals-->
-            <div class="justify-self-center mt-6 md:col md:hidden">
+            <div class="justify-self-center mt-6 lg:col lg:hidden">
 
                 <div class=" rounded-3xl flex">
                     <a href="mailto:evanwhaut@gmail.com">
@@ -106,8 +106,9 @@
 
             <!--About Me Section-->
             <div class="">
-                <p class="md:p-6 mt-6 md:text-2xl text-gray-300 font-body text-center md:text-left">
-                    <span class="text-white text-2xl md:text-4xl">Hi, I’m Evan Haut</span> <br> <br>
+                <p class="lg:p-6 mt-6 lg:text-2xl text-gray-300 font-body text-center lg:text-left">
+                    <span class="text-white text-2xl lg:text-xl xl:text-2xl 2xl:text-4xl">Hi, I’m Evan Haut</span> <br>
+                    <br>
                     Studying Computer Science at CSULB, <br>
                     building rockets with
                     <a href="https://www.beachlaunchteam.com/" class="underline text-yellow-500"> Beach Launch Team
@@ -118,47 +119,31 @@
             </div>
 
             <!--Latest Projects-->
-            <div class="mt-6 md:col-span-2 md:order-last">
+            <div class="mt-6 lg:col-span-2 lg:order-last">
                 <p class="text-white font-body text-center text-2xl md:text-4xl">
                     My Latest Projects
                 </p>
-                <!--Project 1-->
-                <div class="justify-center grid mt-6">
-                    <img src="build/img/TiHexLogo.png" alt="TiHexLogo" class="rounded-3xl">
-                    <p class="font-body text-gray-300 text-justify p-4">
-                        <span class="text-white">TiHex</span> is a hexagonal map creator that I created in Unity. I
-                        created it as a way to implement
-                        some of the data structures that I had learned in class. It was a great project that taught be
-                        how to manage lots of assets. You can test it in-broswer at <a
-                            href="https://enerbunni.itch.io/tihexlite" class="text-white underline">Itch.io</a>.
-                    </p>
+                <div class="md:grid md:grid-cols-2">
+                    <!--Project 1-->
+                    <div class="lg:flex mt-6 lg:col-span-2">
+                        <img src="build/img/TiHexLogo.png" alt="TiHexLogo" class="rounded-3xl lg:w-1/3 lg:h-2/3">
+                        <p
+                            class="font-body text-gray-300 text-justify p-4 self-center lg:text-xl xl:text-2xl 2xl:text-3xl lg:w-2/5">
+                            <span class="text-white font-bold">TiHex</span> is a hexagonal map creator that I created in
+                            Unity. I
+                            created it as a way to implement
+                            some of the data structures that I had learned in class. It was a great project that taught
+                            be
+                            how to manage lots of assets. You can test it in-broswer at <a
+                                href="https://enerbunni.itch.io/tihexlite" class="text-white underline">Itch.io</a>.
+                        </p>
+                    </div>
+
+                    <!--Project 2 reverse the row on lg+ because it looks cool-->
                 </div>
 
-            <!--Project 1-->
-            <div class="grid mt-6 md:order-last">
-                <img src="build/img/TiHexLogo.png" alt="TiHexLogo" class="rounded-3xl justify-self-center md:justify-self-end md:mr-20 md:w-1/2">
-                <p class="font-body text-gray-300 text-justify p-4 md:text-2xl">
-                    <span class="text-white">TiHex</span> is a hexagonal map creator that I created in Unity. I
-                    created it as a way to implement
-                    some of the data structures that I had learned in class. It was a great project that taught be
-                    how to deal with lots of assets. You can test it in-broswer at <a
-                        href="https://enerbunni.itch.io/tihexlite" class="text-white underline">Itch.io</a>.
-                </p>
-            </div>
-
-            <!--Project 2-->
-            <div class="mt-6 md:order-last bg-gray-500">
-                <img src="build/img/TiHexLogo.png" alt="TiHexLogo" class="flex rounded-3xl justify-self-centerv md:justify-self-start md:ml-20 md:w-1/2">
-                <p class="font-body text-gray-300 text-justify p-4 object-contain md:text-2xl flex flex-col">
-                    <span class="text-white">TiHex</span> is a hexagonal map creator that I created in Unity. I
-                    created it as a way to implement
-                    some of the data structures that I had learned in class. It was a great project that taught be
-                    how to deal with lots of assets. You can test it in-broswer at <a
-                        href="https://enerbunni.itch.io/tihexlite" class="text-white underline">Itch.io</a>.
-                </p>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

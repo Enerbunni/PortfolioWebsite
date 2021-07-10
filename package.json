@@ -11,7 +11,8 @@
     "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
-    "tailwind-filter-utilities": "^2.0.0"
+    "tailwind-filter-utilities": "^2.0.0",
+    "tailwindcss-debug-screens": "^2.0.0"
   },
   "scripts": {
     "build": "postcss css/tailwind.css -o public/build/tailwind.css"
