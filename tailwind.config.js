@@ -5,7 +5,5 @@ module.exports = {
       body : ["Varela Round", 'sans-serif'],
     },
   },
-  plugins: [
-    require('tailwindcss-debug-screens'),
-  ]
+  purge: ["./src/**/*.html", "./src/**/*.ts"],
 };
